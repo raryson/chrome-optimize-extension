@@ -3,14 +3,30 @@
   <head>
     <style>
       button {
-        height: 30px;
-        width: 30px;
+        margin:10px;
         outline: none;
+      }
+      .inputDiv {
+        margin-top: 10px;
       }
     </style>
   </head>
   <body>
-    <button id="changeColor"></button>
+    <div>
+      <h2>Variant Editor</h1>
+      <div class="inputDiv">
+          <label for="experiementId">Experiment ID</label>
+          <input type="text" id="experiementId" name="experiementId" />
+      </div>
+     
+      <div class="inputDiv">
+        <label for="variantNumber">Variant Number</label>
+        <input type="number" id="variantNumber" name="variantNumber" />
+      </div>
+      <center>
+        <button>CHANGE!</button>
+      </center>
+    </div>
     <script src="popup.js"></script>
   </body>
 </html>
